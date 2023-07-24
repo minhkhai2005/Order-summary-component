@@ -1,0 +1,117 @@
+/* variable */
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--Pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    width: 400px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: white;
+    border-radius: 12px;
+}
+#pic {
+    width: 400px;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.content-body {
+    padding: 40px 50px;
+}
+.title h1 {
+    font-size: 24px ;
+    text-align: center;
+    color: var(--Dark-blue);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.info p{
+    text-align: center;
+    /* width: 300px; */
+    margin: auto;
+    color: var(--Desaturated-blue);
+    margin-bottom: 20px;
+}
+.plan {
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    padding: 12px;
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.plan h1 {
+    color: var(--Dark-blue);
+}
+.plan h1 span {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+.plan .icon svg {
+    margin-right: 12px;
+}
+.plan a{
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    font-weight: 700;
+    font-size: 12px;
+}
+.plan a:hover{
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+.payment {
+    display: flex;
+    flex-direction: column;
+}
+.payment button {
+    background-color: var(--Bright-blue);
+    color: white;
+    border:none;
+    border-radius: 12px;
+    height: 50px;
+    box-shadow:  0px 10px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.payment button:hover {
+    background-color:  var(--Desaturated-blue);
+}
+.payment a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+}
+.payment a:hover {
+    color: var(--Dark-blue);
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        padding: 50px 15px;
+    }
+    .content {
+        width: 100%;
+        margin: auto;
+    }
+    #pic {
+        width: 100%;
+    }
+}
