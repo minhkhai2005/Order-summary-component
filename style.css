@@ -26,7 +26,6 @@
     background-color: white;
     border-radius: 12px;
     position: relative;
-    overflow: scroll;
 }
 #pic {
     width: 400px;
